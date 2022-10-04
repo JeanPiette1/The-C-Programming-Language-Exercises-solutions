@@ -38,7 +38,7 @@ int main(void)
     max = 0;
     while ((len = getline(line)) > 0)
     {
-        if (len > 0)
+        if (len > max)
         {
             max = len;
             copy(longest, line);
